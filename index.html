@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./styles.css">
+    <title>navigation</title>
+</head>
+
+<body>
+    <button id="mobileNav">
+        <svg width="50px" height="50px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M5 8H13.75M5 12H19M10.25 16L19 16" stroke="#464455" stroke-linecap="round"
+                stroke-linejoin="round" />
+        </svg>
+    </button>
+    <div class="wrapper" id="wrapper">
+        <div class="logo">Clever</div>
+        <div class="nav">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Features</a></li>
+                <li><a href="#">Pricing</a></li>
+            </ul>
+        </div>
+        <div class="actions">
+            <a href="#">Sign in</a>
+            <a href="#">Register</a>
+        </div>
+    </div>
+
+
+    <script>
+        const btn = document.getElementById("mobileNav");
+        btn.addEventListener("click", () => {
+            document.getElementById("wrapper").classList.toggle("block")
+        })
+    </script>
+</body>
+
+</html>
